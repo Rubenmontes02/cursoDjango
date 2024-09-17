@@ -1,8 +1,13 @@
 {%extends 'core/base.html'%}
 
-{% block content%}
+{% block title%} Portada {% endblock%}
 
-<h2>Portada</h2>
-<p>Esto es la portada</p>
 
-{% endblock%}
+{%block background%}{%load static%} {% static 'core/img/home-bg.jpg'%}{%endblock%}
+
+
+{%block headers%}
+<h1>Rubén Montes</h1>
+<span class="subheading">Programador</span>
+{%endblock%}
+
